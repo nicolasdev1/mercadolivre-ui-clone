@@ -1,9 +1,9 @@
 import styled, { css } from 'styled-components';
 import {
-  AiOutlinePushpin,
-  AiOutlineMessage,
-  AiOutlineClockCircle,
-} from 'react-icons/ai';
+  MapPin,
+  MessageSquare,
+  Clock
+} from 'styled-icons/feather';
 
 export const Container = styled.div`
   display: flex;
@@ -56,7 +56,7 @@ const iconCSS = css`
   height: 30px;
 `;
   
-export const LocationIcon = styled(AiOutlinePushpin)`
+export const LocationIcon = styled(MapPin)`
   ${iconCSS}
 `;
   
@@ -159,10 +159,10 @@ export const ReputationRow = styled.div`
   }
 `;
   
-export const SupportIcon = styled(AiOutlineMessage)`
+export const SupportIcon = styled(MessageSquare)`
   ${iconCSS}
 `;
   
-export const ClockIcon = styled(AiOutlineClockCircle)`
+export const ClockIcon = styled(Clock)`
   ${iconCSS}
 `;

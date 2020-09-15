@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import {
-  AiOutlineHeart,
-  AiFillStar,
-  AiOutlineCheck,
-  AiOutlineCheckCircle,
-} from 'react-icons/ai';
+  Heart,
+  Star,
+  Check,
+  Truck,
+} from 'styled-icons/feather';
 
 export const Container = styled.div`
   display: flex;
@@ -35,7 +35,7 @@ export const Row = styled.div`
   }
 `;
 
-export const HeartIcon = styled(AiOutlineHeart)`
+export const HeartIcon = styled(Heart)`
   width: 28px;
   height: 28px;
   flex-shrink: 0;
@@ -59,14 +59,16 @@ export const RowReputation = styled.div`
   }
 `;
 
-export const StarIcon = styled(AiFillStar)`
+export const StarIcon = styled(Star)`
   width: 21px;
   height: 21px;
 
   color: #ddd;
+  fill: #ddd;
 
   &.active {
     color: var(--color-blue);
+    fill: var(--color-blue);
   }
 `;
 
@@ -163,7 +165,7 @@ export const MethodCard = styled.div`
   }
 `;
 
-export const CheckIcon = styled(AiOutlineCheck)`
+export const CheckIcon = styled(Check)`
   width: 21px;
   height: 21px;
 
@@ -228,7 +230,7 @@ export const Benefits = styled.ul`
   }
 `;
 
-export const ShieldIcon = styled(AiOutlineCheckCircle)`
+export const ShieldIcon = styled(Truck)`
   width: 20px;
   height: 20px;
 
